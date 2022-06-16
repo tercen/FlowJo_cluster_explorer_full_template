@@ -1,10 +1,10 @@
 {
   "kind": "Workflow",
-  "id": "b8f82b535327fcf796250dd07123379b",
+  "id": "b6d3b2262166fb86a01864c274561f3a",
   "isDeleted": false,
-  "rev": "69-3daa93d6c33be7f1c99a6994105d10de",
+  "rev": "14-5ae9d3cba4d7cfe3c66bf5aebc1a6302",
   "description": "Performs FlowSOM (cluster n=15) and views the results with a heatmap and minimum spanning tree (MST). FlowSOM clusters are also visualized in a heatmap using MEM score. 2D plot with Flt-SNE and UMAP.  FlowSOM and UMAP results will be stored in the exporting data folder for the further application. No downsampling applied. For use with FlowJo plugin uploaded data.",
-  "name": "FlowJo Cluster Explorer - Full_Template",
+  "name": "FlowJo Cluster Explorer - Full",
   "createdBy": "maho.nagasawa",
   "acl": {
     "kind": "Acl",
@@ -13,11 +13,11 @@
   },
   "createdDate": {
     "kind": "Date",
-    "value": "2022-06-09T13:39:37.930031Z"
+    "value": "2022-06-16T12:53:00.035877Z"
   },
   "lastModifiedDate": {
     "kind": "Date",
-    "value": "2022-06-13T13:17:58.119907Z"
+    "value": "2022-06-16T13:26:48.468621Z"
   },
   "urls": [
     {
@@ -163,7 +163,7 @@
         "kind": "TableStepModel",
         "relation": {
           "kind": "UnionRelation",
-          "id": "605a49ec-8d13-4292-bff7-2478a9ca2f31",
+          "id": "ad30d41e-b28b-4a43-a3e6-326f95b06251",
           "relations": []
         }
       }
@@ -494,7 +494,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "7b72db23-3159-4022-ab3b-fac2ec328fd7"
+        "id": "9fe2263d-d974-45ed-8542-872bd98745b3"
       }
     },
     {
@@ -827,7 +827,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "a3ab6fbf-8094-4df4-a030-4ea5ca695e14"
+        "id": "7de65bd3-6016-4380-8d19-7d00ce393007"
       }
     },
     {
@@ -1175,7 +1175,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "2e9ed3f7-968f-4416-b9c9-bccd31a935d3"
+        "id": "95e53b94-1a66-4b07-8da2-96af04d898c0"
       }
     },
     {
@@ -1359,7 +1359,7 @@
             }
           ],
           "rectangleSelections": [],
-          "nRows": 423815
+          "nRows": 1
         },
         "filters": {
           "kind": "Filters",
@@ -1443,13 +1443,13 @@
             }
           ],
           "rectangleSelections": [],
-          "nRows": 8
+          "nRows": 1
         },
         "taskId": ""
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "6d7bdb37-ee65-4826-8d34-9fefb6729c18"
+        "id": "fc89982b-8068-42bc-9533-19064de01b54"
       }
     },
     {
@@ -1753,7 +1753,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "18d1922b-6e01-421c-82ef-55651b3b251d"
+        "id": "5abfdb5c-6496-415b-9008-6aad89ade448"
       }
     },
     {
@@ -1989,7 +1989,7 @@
         "rowTable": {
           "kind": "CrosstabTable",
           "cellSize": 250.0,
-          "offset": 0,
+          "offset": 5,
           "graphicalFactors": [
             {
               "kind": "GraphicalFactor",
@@ -2020,7 +2020,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "380ce4c9-7e47-41be-ae04-d77a7ac733d6"
+        "id": "ea1b2de6-7a03-4740-ad15-aea64d18b431"
       }
     },
     {
@@ -2279,7 +2279,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "7ce0a855-6fbf-4eab-8040-c32820b8b93f"
+        "id": "6a821cfa-4e03-466b-a98f-c21472204a30"
       }
     },
     {
@@ -2568,7 +2568,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "833865dc-f7d0-4d1f-be3c-1b0788c23be8"
+        "id": "29f17856-453b-454a-80c8-6dbc774c4900"
       }
     },
     {
@@ -2855,7 +2855,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "0530e8b6-7fd8-483d-b57c-df5b48aa6747"
+        "id": "3643b45d-e6f0-42a9-bf39-0eb84c82707d"
       }
     },
     {
@@ -3114,7 +3114,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "da6e0c62-2e20-4323-af45-993a760b0b9b"
+        "id": "e19d1d30-638d-433c-a02e-dc898c4adeb5"
       }
     },
     {
@@ -3350,7 +3350,7 @@
         "rowTable": {
           "kind": "CrosstabTable",
           "cellSize": 178.0,
-          "offset": 1,
+          "offset": 3,
           "graphicalFactors": [
             {
               "kind": "GraphicalFactor",
@@ -3381,7 +3381,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "baee5945-b334-42fe-890c-298549b5a4c9"
+        "id": "7640aa1e-5124-4b41-af50-ea0da24f5877"
       }
     },
     {
@@ -3666,14 +3666,14 @@
               "kind": "GraphicalFactor",
               "factor": {
                 "kind": "Factor",
-                "name": "res..rowId",
+                "name": "rowId",
                 "type": "int32"
               },
               "rectangle": {
                 "kind": "Rectangle",
                 "extent": {
                   "kind": "Point",
-                  "x": 100.0,
+                  "x": 50.0,
                   "y": 30.0
                 },
                 "topLeft": {
@@ -3754,7 +3754,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "03302261-ac87-44c0-a1d5-9c24e19ca21b"
+        "id": "8ea26611-c20f-4500-998e-81b21d976f66"
       }
     },
     {
@@ -4104,7 +4104,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "1fcc405e-f408-4051-b9c7-6f7fe9faca88"
+        "id": "aa4bdfdc-9dcc-4003-a8eb-3c4a9c86f4e2"
       }
     }
   ],
