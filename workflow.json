@@ -2,7 +2,7 @@
   "kind": "Workflow",
   "id": "01cf8a8eb53fde1e9f3bc64e85633a8e",
   "isDeleted": false,
-  "rev": "5-a9b8ba956bb641f739cfeb037470df91",
+  "rev": "31-de49aeab4cf689d74934be6b3502c3cc",
   "description": "Performs FlowSOM (cluster n=15) and views the results with a heatmap and minimum spanning tree (MST). FlowSOM clusters are also visualized in a heatmap using MEM score. 2D plot with Flt-SNE and UMAP. No downsampling applied. For use with FlowJo plugin uploaded data.",
   "name": "FlowJo Cluster Explorer - Full",
   "createdBy": "ger.inberg",
@@ -17,7 +17,7 @@
   },
   "lastModifiedDate": {
     "kind": "Date",
-    "value": "2022-07-07T10:06:49.966535Z"
+    "value": "2022-07-07T14:29:10.520434Z"
   },
   "urls": [
     {
@@ -136,13 +136,13 @@
         "kind": "Rectangle",
         "extent": {
           "kind": "Point",
-          "x": 91.72190856933594,
+          "x": 91.72169494628906,
           "y": 55.0
         },
         "topLeft": {
           "kind": "Point",
           "x": 667.5050000000001,
-          "y": 41.5
+          "y": 38.5
         }
       },
       "state": {
@@ -156,7 +156,7 @@
         "kind": "TableStepModel",
         "relation": {
           "kind": "UnionRelation",
-          "id": "bfad1604-bd83-4a5d-8b64-b9870cb82d14",
+          "id": "911ec67f-9975-497c-8994-c7bfe63f64d8",
           "relations": []
         }
       }
@@ -508,7 +508,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "80dd44d9-bb37-4d07-a4f5-449795d44b06"
+        "id": "128b58fd-7ad0-4379-b808-4411178ce764"
       }
     },
     {
@@ -536,7 +536,7 @@
         "kind": "Rectangle",
         "extent": {
           "kind": "Point",
-          "x": 97.4898681640625,
+          "x": 97.48971557617188,
           "y": 55.0
         },
         "topLeft": {
@@ -574,7 +574,7 @@
                 "factors": [
                   {
                     "kind": "Factor",
-                    "name": "MEM.score",
+                    "name": "ME.score",
                     "type": "double"
                   }
                 ],
@@ -660,7 +660,7 @@
                   "kind": "GraphicalFactor",
                   "factor": {
                     "kind": "Factor",
-                    "name": "MEM.score",
+                    "name": "ME.score",
                     "type": "double"
                   },
                   "rectangle": {
@@ -684,21 +684,21 @@
         },
         "columnTable": {
           "kind": "CrosstabTable",
-          "cellSize": 16.06762428604077,
+          "cellSize": 46.6009576193741,
           "offset": 0,
           "graphicalFactors": [
             {
               "kind": "GraphicalFactor",
               "factor": {
                 "kind": "Factor",
-                "name": "MEM..filename",
+                "name": "ME..filename",
                 "type": "string"
               },
               "rectangle": {
                 "kind": "Rectangle",
                 "extent": {
                   "kind": "Point",
-                  "x": 130.0,
+                  "x": 120.0,
                   "y": 30.0
                 },
                 "topLeft": {
@@ -809,21 +809,21 @@
         },
         "rowTable": {
           "kind": "CrosstabTable",
-          "cellSize": 366.0,
+          "cellSize": 74.0,
           "offset": 0,
           "graphicalFactors": [
             {
               "kind": "GraphicalFactor",
               "factor": {
                 "kind": "Factor",
-                "name": "MEM..channel",
+                "name": "ME..channel",
                 "type": "string"
               },
               "rectangle": {
                 "kind": "Rectangle",
                 "extent": {
                   "kind": "Point",
-                  "x": 192.0,
+                  "x": 80.0,
                   "y": 0.0
                 },
                 "topLeft": {
@@ -841,14 +841,14 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "c0590f5d-fe3a-4eb8-82af-8ce3cba88137"
+        "id": "89b10772-6c88-4510-beb3-ac5f952f2706"
       }
     },
     {
       "kind": "DataStep",
       "id": "24e1a143-503a-4a30-8e6f-08d53406b156",
       "groupId": "",
-      "name": "FlowSOM MEM Heatmap",
+      "name": "FlowSOM ME Heatmap",
       "inputs": [
         {
           "kind": "InputPort",
@@ -869,13 +869,13 @@
         "kind": "Rectangle",
         "extent": {
           "kind": "Point",
-          "x": 162.25384521484375,
+          "x": 152.07546997070312,
           "y": 55.0
         },
         "topLeft": {
           "kind": "Point",
-          "x": 632.2001953125,
-          "y": 454.5
+          "x": 637.2001953125,
+          "y": 455.5
         }
       },
       "state": {
@@ -907,7 +907,7 @@
                 "factors": [
                   {
                     "kind": "Factor",
-                    "name": "MEM.score",
+                    "name": "ME.score",
                     "type": "double"
                   }
                 ],
@@ -993,7 +993,7 @@
                   "kind": "GraphicalFactor",
                   "factor": {
                     "kind": "Factor",
-                    "name": "MEM.score",
+                    "name": "ME.score",
                     "type": "double"
                   },
                   "rectangle": {
@@ -1017,7 +1017,7 @@
         },
         "columnTable": {
           "kind": "CrosstabTable",
-          "cellSize": 18.43562762663872,
+          "cellSize": 38.30229429330539,
           "offset": 0,
           "graphicalFactors": [
             {
@@ -1122,7 +1122,7 @@
         },
         "rowTable": {
           "kind": "CrosstabTable",
-          "cellSize": 405.69304,
+          "cellSize": 67.69304,
           "offset": 0,
           "graphicalFactors": [
             {
@@ -1175,7 +1175,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "59b4c2d2-e814-44e0-8572-093743f38810"
+        "id": "797ecddc-071b-49ff-84df-09e3cfc1be0d"
       }
     },
     {
@@ -1470,7 +1470,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "08628ccb-cf9b-45b8-97b8-e2303e0595f1"
+        "id": "7673363d-7cc6-4d6c-99e1-dd538b8b14cf"
       }
     },
     {
@@ -1795,7 +1795,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "44e2bebd-a267-4fe5-bb81-5ce41afe5b9f"
+        "id": "2f09f234-efcb-48f8-aee3-81cef7f95021"
       }
     },
     {
@@ -1823,7 +1823,7 @@
         "kind": "Rectangle",
         "extent": {
           "kind": "Point",
-          "x": 128.44383239746094,
+          "x": 128.44358825683594,
           "y": 55.0
         },
         "topLeft": {
@@ -2062,7 +2062,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "b5ebcd1a-cb20-423f-ae9e-6e1c8c3003fe"
+        "id": "a34b91de-8fdb-48fc-ac37-777c50f18244"
       }
     },
     {
@@ -2090,7 +2090,7 @@
         "kind": "Rectangle",
         "extent": {
           "kind": "Point",
-          "x": 146.9658660888672,
+          "x": 146.9654998779297,
           "y": 55.0
         },
         "topLeft": {
@@ -2321,14 +2321,14 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "cf538148-a937-4059-9517-8ee7db876a9b"
+        "id": "d3eeb3ee-20ff-4783-8aa9-18d4b3155ee7"
       }
     },
     {
       "kind": "DataStep",
       "id": "ab28ef10-f7c1-4d52-9ee9-60d0835f1932",
       "groupId": "",
-      "name": "MEM Score",
+      "name": "ME Score",
       "inputs": [
         {
           "kind": "InputPort",
@@ -2535,12 +2535,12 @@
         },
         "operatorSettings": {
           "kind": "OperatorSettings",
-          "namespace": "MEM",
+          "namespace": "ME",
           "operatorRef": {
             "kind": "OperatorRef",
             "name": "Marker Enrichment Score",
             "version": "0.0.4",
-            "operatorId": "01cf8a8eb53fde1e9f3bc64e855109af",
+            "operatorId": "01cf8a8eb53fde1e9f3bc64e858f6be7",
             "operatorKind": "ROperator",
             "propertyValues": [],
             "url": {
@@ -2610,7 +2610,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "81d7e0f4-bf7b-4642-bcc1-1903829dc4c3"
+        "id": "dc48a09d-1fb3-4506-a780-64e78a5f9d51"
       }
     },
     {
@@ -2638,7 +2638,7 @@
         "kind": "Rectangle",
         "extent": {
           "kind": "Point",
-          "x": 155.09982299804688,
+          "x": 155.09947204589844,
           "y": 55.0
         },
         "topLeft": {
@@ -2869,7 +2869,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "58a4850f-93db-47f2-8760-8bb05112e087"
+        "id": "5913b9ad-5f41-4d9c-8fd3-b4ecfc6a2906"
       }
     },
     {
@@ -2897,7 +2897,7 @@
         "kind": "Rectangle",
         "extent": {
           "kind": "Point",
-          "x": 120.30987548828125,
+          "x": 120.30961608886719,
           "y": 55.0
         },
         "topLeft": {
@@ -3136,7 +3136,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "9a745ebe-49ae-4e15-9532-cc577caa1e88"
+        "id": "3b965ce3-8635-4459-9217-cbc046c98b0b"
       }
     },
     {
@@ -3164,7 +3164,7 @@
         "kind": "Rectangle",
         "extent": {
           "kind": "Point",
-          "x": 170.7238311767578,
+          "x": 170.723388671875,
           "y": 55.0
         },
         "topLeft": {
@@ -3381,7 +3381,7 @@
             }
           ],
           "rectangleSelections": [],
-          "nRows": 250342
+          "nRows": 1
         },
         "filters": {
           "kind": "Filters",
@@ -3480,13 +3480,13 @@
             }
           ],
           "rectangleSelections": [],
-          "nRows": 9
+          "nRows": 1
         },
         "taskId": ""
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "605fd866-8921-4835-a910-60e62d3ff247"
+        "id": "494e775b-9a11-4414-a530-313273223e2f"
       }
     }
   ],
