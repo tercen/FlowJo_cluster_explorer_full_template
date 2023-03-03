@@ -1,23 +1,23 @@
 {
   "kind": "Workflow",
-  "id": "01cf8a8eb53fde1e9f3bc64e85633a8e",
+  "id": "5fdacf2e254f508d0bd669ac0347a36e",
   "isDeleted": false,
-  "rev": "31-de49aeab4cf689d74934be6b3502c3cc",
+  "rev": "16-3c8c709dd6a72c634f8697522b0c55ea",
   "description": "Performs FlowSOM (cluster n=15) and views the results with a heatmap and minimum spanning tree (MST). FlowSOM clusters are also visualized in a heatmap using MEM score. 2D plot with Flt-SNE and UMAP. No downsampling applied. For use with FlowJo plugin uploaded data.",
   "name": "FlowJo Cluster Explorer - Full",
-  "createdBy": "ger.inberg",
+  "createdBy": "myrto.kostadima",
   "acl": {
     "kind": "Acl",
-    "owner": "TestTeam",
+    "owner": "myrto.kostadima",
     "aces": []
   },
   "createdDate": {
     "kind": "Date",
-    "value": "2022-07-07T10:06:00.717448Z"
+    "value": "2023-03-02T13:50:40.919148Z"
   },
   "lastModifiedDate": {
     "kind": "Date",
-    "value": "2022-07-07T14:29:10.520434Z"
+    "value": "2023-03-03T11:00:46.842716Z"
   },
   "urls": [
     {
@@ -36,8 +36,18 @@
     },
     {
       "kind": "Pair",
-      "key": "workflow.template",
-      "value": ""
+      "key": "_upgrade_",
+      "value": "0.10.0"
+    },
+    {
+      "kind": "Pair",
+      "key": "_upgrade_reset_",
+      "value": "0.10.0"
+    },
+    {
+      "kind": "Pair",
+      "key": "_upgrade_old_task_",
+      "value": "0.10.15"
     }
   ],
   "url": {
@@ -47,7 +57,7 @@
   "version": "0.0.6",
   "authors": [],
   "isPublic": false,
-  "projectId": "01cf8a8eb53fde1e9f3bc64e8550f702",
+  "projectId": "5fdacf2e254f508d0bd669ac0337b5ce",
   "folderId": "",
   "links": [
     {
@@ -100,12 +110,6 @@
     },
     {
       "kind": "Link",
-      "id": "ad86de12-88c1-470f-b9e3-b2f1fd800a78",
-      "inputId": "ebda5081-aae4-45fc-b91b-f7b4b19d402a-i-0",
-      "outputId": "0396dda7-fae2-4ffd-865b-4cee6a25cb06-o-0"
-    },
-    {
-      "kind": "Link",
       "id": "d8db130f-5fca-4375-add7-0114b859c8ea",
       "inputId": "d81a7446-5a4b-405d-beaf-e743c711d227-i-0",
       "outputId": "ebda5081-aae4-45fc-b91b-f7b4b19d402a-o-0"
@@ -115,6 +119,12 @@
       "id": "9acd049a-6876-435e-93a9-ef3292901c28",
       "inputId": "d84cdbd7-e83e-430c-a047-58c43b802108-i-0",
       "outputId": "ebda5081-aae4-45fc-b91b-f7b4b19d402a-o-0"
+    },
+    {
+      "kind": "Link",
+      "id": "251c3455-e05a-4edc-bb7c-23d56adba3aa",
+      "inputId": "ebda5081-aae4-45fc-b91b-f7b4b19d402a-i-0",
+      "outputId": "0396dda7-fae2-4ffd-865b-4cee6a25cb06-o-0"
     }
   ],
   "steps": [
@@ -136,7 +146,7 @@
         "kind": "Rectangle",
         "extent": {
           "kind": "Point",
-          "x": 91.72169494628906,
+          "x": 91.72190856933594,
           "y": 55.0
         },
         "topLeft": {
@@ -363,7 +373,7 @@
             }
           ],
           "rectangleSelections": [],
-          "nRows": 250342
+          "nRows": 217453
         },
         "filters": {
           "kind": "Filters",
@@ -376,8 +386,8 @@
           "operatorRef": {
             "kind": "OperatorRef",
             "name": "FlowSOM",
-            "version": "1.3.4",
-            "operatorId": "b8f82b535327fcf796250dd0710194bc",
+            "version": "1.6.0",
+            "operatorId": "5fdacf2e254f508d0bd669ac03392687",
             "operatorKind": "DockerOperator",
             "propertyValues": [
               {
@@ -429,16 +439,6 @@
                 "kind": "PropertyValue",
                 "name": "distf",
                 "value": "2"
-              },
-              {
-                "kind": "PropertyValue",
-                "name": "minPercent",
-                "value": "0.05"
-              },
-              {
-                "kind": "PropertyValue",
-                "name": "labelQuantile",
-                "value": "0.95"
               }
             ],
             "url": {
@@ -502,13 +502,13 @@
             }
           ],
           "rectangleSelections": [],
-          "nRows": 9
+          "nRows": 8
         },
         "taskId": ""
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "128b58fd-7ad0-4379-b808-4411178ce764"
+        "id": "fddebdb1-f1ac-4fa2-a4f8-8939d20714fb"
       }
     },
     {
@@ -536,7 +536,7 @@
         "kind": "Rectangle",
         "extent": {
           "kind": "Point",
-          "x": 97.48971557617188,
+          "x": 97.4898681640625,
           "y": 55.0
         },
         "topLeft": {
@@ -744,8 +744,8 @@
           "operatorRef": {
             "kind": "OperatorRef",
             "name": "Hclust - Order",
-            "version": "1.1.2",
-            "operatorId": "058949c1c8c27183fbfbf12f12b950f8",
+            "version": "1.1.3",
+            "operatorId": "5fdacf2e254f508d0bd669ac033db583",
             "operatorKind": "ROperator",
             "propertyValues": [
               {
@@ -835,13 +835,13 @@
             }
           ],
           "rectangleSelections": [],
-          "nRows": 9
+          "nRows": 8
         },
         "taskId": ""
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "89b10772-6c88-4510-beb3-ac5f952f2706"
+        "id": "8c28d601-ee16-4648-a218-af8bd670f50c"
       }
     },
     {
@@ -869,7 +869,7 @@
         "kind": "Rectangle",
         "extent": {
           "kind": "Point",
-          "x": 152.07546997070312,
+          "x": 152.0758514404297,
           "y": 55.0
         },
         "topLeft": {
@@ -1175,7 +1175,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "797ecddc-071b-49ff-84df-09e3cfc1be0d"
+        "id": "6f771a8e-7b0e-4642-8d08-d39bb222c527"
       }
     },
     {
@@ -1394,7 +1394,7 @@
             "kind": "OperatorRef",
             "name": "FI-t-SNE",
             "version": "0.1.4",
-            "operatorId": "a33e2c0f05753e1b035d27049ad46562",
+            "operatorId": "41fcacecf20de12dea7c2421179ceb21",
             "operatorKind": "ROperator",
             "propertyValues": [
               {
@@ -1470,7 +1470,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "7673363d-7cc6-4d6c-99e1-dd538b8b14cf"
+        "id": "8e949692-f72c-4a44-a3d6-0b0cae586f01"
       }
     },
     {
@@ -1675,7 +1675,7 @@
             }
           ],
           "rectangleSelections": [],
-          "nRows": 250342
+          "nRows": 217453
         },
         "filters": {
           "kind": "Filters",
@@ -1688,8 +1688,8 @@
           "operatorRef": {
             "kind": "OperatorRef",
             "name": "umap",
-            "version": "1.2.0",
-            "operatorId": "d39d7a670a36c13356a407fccd8e2645",
+            "version": "1.2.1",
+            "operatorId": "5fdacf2e254f508d0bd669ac033f41be",
             "operatorKind": "ROperator",
             "propertyValues": [
               {
@@ -1704,6 +1704,11 @@
               },
               {
                 "kind": "PropertyValue",
+                "name": "n_neighbors",
+                "value": "15"
+              },
+              {
+                "kind": "PropertyValue",
                 "name": "spread",
                 "value": "1"
               },
@@ -1715,7 +1720,7 @@
               {
                 "kind": "PropertyValue",
                 "name": "pca",
-                "value": "NULL"
+                "value": "-1"
               },
               {
                 "kind": "PropertyValue",
@@ -1789,13 +1794,13 @@
             }
           ],
           "rectangleSelections": [],
-          "nRows": 9
+          "nRows": 8
         },
         "taskId": ""
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "2f09f234-efcb-48f8-aee3-81cef7f95021"
+        "id": "82e5349b-9162-4c5a-9c0e-4e16caf6f5ee"
       }
     },
     {
@@ -1823,7 +1828,7 @@
         "kind": "Rectangle",
         "extent": {
           "kind": "Point",
-          "x": 128.44358825683594,
+          "x": 128.44383239746094,
           "y": 55.0
         },
         "topLeft": {
@@ -1875,12 +1880,12 @@
                     {
                       "kind": "DoubleColorElement",
                       "color": -1,
-                      "stringValue": "-40.5"
+                      "stringValue": "36"
                     },
                     {
                       "kind": "DoubleColorElement",
                       "color": -1,
-                      "stringValue": "802.5"
+                      "stringValue": "462"
                     }
                   ]
                 }
@@ -2056,13 +2061,13 @@
             }
           ],
           "rectangleSelections": [],
-          "nRows": 9
+          "nRows": 8
         },
         "taskId": ""
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "a34b91de-8fdb-48fc-ac37-777c50f18244"
+        "id": "6209cf5a-0b32-43a2-a2c7-a92f64d0c914"
       }
     },
     {
@@ -2090,7 +2095,7 @@
         "kind": "Rectangle",
         "extent": {
           "kind": "Point",
-          "x": 146.9654998779297,
+          "x": 146.9658660888672,
           "y": 55.0
         },
         "topLeft": {
@@ -2321,7 +2326,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "d3eeb3ee-20ff-4783-8aa9-18d4b3155ee7"
+        "id": "f79c9d2b-db41-49aa-802c-cc7c11060f0c"
       }
     },
     {
@@ -2539,8 +2544,8 @@
           "operatorRef": {
             "kind": "OperatorRef",
             "name": "Marker Enrichment Score",
-            "version": "0.0.4",
-            "operatorId": "01cf8a8eb53fde1e9f3bc64e858f6be7",
+            "version": "0.1.1",
+            "operatorId": "5fdacf2e254f508d0bd669ac033d1a34",
             "operatorKind": "ROperator",
             "propertyValues": [],
             "url": {
@@ -2604,13 +2609,13 @@
             }
           ],
           "rectangleSelections": [],
-          "nRows": 9
+          "nRows": 8
         },
         "taskId": ""
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "dc48a09d-1fb3-4506-a780-64e78a5f9d51"
+        "id": "d7245ebd-3fd3-468d-bb3a-1ddc9783a7b2"
       }
     },
     {
@@ -2638,7 +2643,7 @@
         "kind": "Rectangle",
         "extent": {
           "kind": "Point",
-          "x": 155.09947204589844,
+          "x": 155.09982299804688,
           "y": 55.0
         },
         "topLeft": {
@@ -2869,7 +2874,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "5913b9ad-5f41-4d9c-8fd3-b4ecfc6a2906"
+        "id": "cb8c3143-222b-4d18-b4e7-d7ee097da63e"
       }
     },
     {
@@ -2897,7 +2902,7 @@
         "kind": "Rectangle",
         "extent": {
           "kind": "Point",
-          "x": 120.30961608886719,
+          "x": 120.30987548828125,
           "y": 55.0
         },
         "topLeft": {
@@ -3136,7 +3141,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "3b965ce3-8635-4459-9217-cbc046c98b0b"
+        "id": "6e9e4938-4bb8-4864-a885-e4868b50997d"
       }
     },
     {
@@ -3164,7 +3169,7 @@
         "kind": "Rectangle",
         "extent": {
           "kind": "Point",
-          "x": 170.723388671875,
+          "x": 170.7238311767578,
           "y": 55.0
         },
         "topLeft": {
@@ -3395,7 +3400,7 @@
             "kind": "OperatorRef",
             "name": "FlowSOM MST",
             "version": "0.0.3",
-            "operatorId": "d39d7a670a36c13356a407fccd6ed12a",
+            "operatorId": "41fcacecf20de12dea7c2421179d1b14",
             "operatorKind": "DockerOperator",
             "propertyValues": [
               {
@@ -3486,7 +3491,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "494e775b-9a11-4414-a530-313273223e2f"
+        "id": "6260c7b9-d773-49b3-8938-59fd1c7079bb"
       }
     }
   ],
